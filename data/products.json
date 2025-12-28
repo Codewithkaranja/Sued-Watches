@@ -1,0 +1,88 @@
+[
+  {
+    "id": "prod001",
+    "name": "Nairobi Leather Classic",
+    "description": "Premium full-grain leather watch with minimalist design",
+    "price": 18999,
+    "originalPrice": 22999,
+    "category": "leather",
+    "collection": "new",
+    "images": ["images/products/watch1.jpg", "images/products/watch1-2.jpg"],
+    "specifications": {
+      "material": "Italian Leather",
+      "strapLength": "Adjustable 18-22cm",
+      "waterResistant": true,
+      "warranty": "2 years"
+    },
+    "colors": ["Black", "Brown", "Tan"],
+    "sizes": ["Standard"],
+    "stock": 15,
+    "rating": 4.8,
+    "reviews": 42,
+    "createdAt": "2024-01-15"
+  },
+  {
+    "id": "prod002",
+    "name": "Maasai Beaded Heritage",
+    "description": "Traditional Maasai beadwork on genuine leather strap",
+    "price": 24999,
+    "category": "beaded",
+    "collection": "best",
+    "images": ["images/products/watch2.jpg"],
+    "specifications": {
+      "material": "Maasai Beads & Leather",
+      "strapLength": "Adjustable 18-22cm",
+      "waterResistant": false,
+      "warranty": "2 years"
+    },
+    "colors": ["Multicolor", "Red/Blue"],
+    "sizes": ["Standard"],
+    "stock": 8,
+    "rating": 4.9,
+    "reviews": 28,
+    "createdAt": "2023-11-20"
+  },
+  {
+    "id": "prod003",
+    "name": "Kilimanjaro Limited Edition",
+    "description": "Limited edition watch with African ebony wood accents",
+    "price": 34999,
+    "originalPrice": 39999,
+    "category": "leather",
+    "collection": "limited",
+    "images": ["images/products/watch3.jpg"],
+    "specifications": {
+      "material": "Leather & Ebony Wood",
+      "strapLength": "Adjustable 18-22cm",
+      "waterResistant": true,
+      "warranty": "3 years"
+    },
+    "colors": ["Black/Brown"],
+    "sizes": ["Standard"],
+    "stock": 5,
+    "rating": 5.0,
+    "reviews": 15,
+    "createdAt": "2024-02-01"
+  },
+  {
+    "id": "prod004",
+    "name": "Safari Beaded Explorer",
+    "description": "Durable beaded watch inspired by African safari",
+    "price": 21999,
+    "category": "beaded",
+    "collection": "new",
+    "images": ["images/products/watch4.jpg"],
+    "specifications": {
+      "material": "Glass Beads & Leather",
+      "strapLength": "Adjustable 18-22cm",
+      "waterResistant": true,
+      "warranty": "2 years"
+    },
+    "colors": ["Green/Brown", "Blue/White"],
+    "sizes": ["Standard"],
+    "stock": 12,
+    "rating": 4.7,
+    "reviews": 36,
+    "createdAt": "2024-01-25"
+  }
+]

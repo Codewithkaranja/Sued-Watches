@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" class="stories-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Stories | SUED Watches - Narratives of Nairobi</title>
+    <meta name="description" content="Discover the stories behind SUED Watches: artisan journeys, customer experiences, and the cultural heritage that inspires our timepieces.">
+    <meta name="keywords" content="watch stories Nairobi, artisan journeys, Maasai heritage, customer experiences, African watchmaking stories">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Our Stories | SUED Watches">
+    <meta property="og:description" content="Narratives of craftsmanship, culture, and community from Nairobi's watchmakers">
+    <meta property="og:image" content="https://suedwatches.co.ke/images/stories-og.jpg">
+    
+    <!-- Preload Assets -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/stories.css" as="style">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stories.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-transparent">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">⌚</span>
+                    <span class="logo-text">SUED<span class="logo-accent">WATCHES</span></span>
+                </a>
+                <span class="nav-tagline">Nairobi Stories</span>
+            </div>
+
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="craftsmanship.html">Craftsmanship</a></li>
+                    <li><a href="stories.html" class="active">Our Stories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="shop.html" class="btn btn-outline-white btn-sm">
+                        <i class="fas fa-shopping-bag"></i>
+                        Shop Collection
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="stories-hero">
+        <div class="hero-background">
+            <div class="background-overlay"></div>
+            <div class="hero-image" style="background-image: url('images/stories/hero-bg.jpg');"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Stories Woven</span>
+                        <span class="title-line highlight">in Time</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Every SUED watch carries narratives of heritage, craftsmanship, and the people who bring them to life.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Artisan Stories</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5,000+</span>
+                            <span class="stat-label">Customer Journeys</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Maasai Traditions</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-scroll">
+                    <span>Discover our narratives</span>
+                    <div class="scroll-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Story -->
+    <section class="featured-story">
+        <div class="container">
+            <div class="story-tag">
+                <span>Featured Story</span>
+            </div>
+            
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="images/stories/featured-story.jpg" alt="Samuel's Journey" loading="lazy">
+                    <div class="image-caption">
+                        <span>Samuel Njoroge, Master Artisan</span>
+                    </div>
+                </div>
+                
+                <div class="featured-text">
+                    <h2>From Kibera to Master Craftsman: Samuel's 25-Year Journey</h2>
+                    <p class="story-meta">
+                        <span class="author">By Amina Wambui</span>
+                        <span class="date">October 15, 2023</span>
+                        <span class="read-time">8 min read</span>
+                    </p>
+                    
+                    <div class="story-excerpt">
+                        <p>In the narrow alleys of Kibera, a young Samuel Njoroge would watch his grandfather repair leather sandals using nothing but a needle, thread, and decades of wisdom. Today, his hands craft watches that grace wrists from Nairobi to New York.</p>
+                        
+                        <p>"I never imagined leatherworking could take me around the world," Samuel reflects, carefully stitching a watch strap. "But here I am, teaching apprentices and seeing my work in magazines."</p>
+                        
+                        <blockquote class="story-quote">
+                            "The thread doesn't just connect leather—it connects generations. Every stitch honors my grandfather's memory."
+                            <cite>— Samuel Njoroge</cite>
+                        </blockquote>
+                        
+                        <p>Samuel's journey from a self-taught artisan to SUED's master leatherworker is a testament to Nairobi's creative spirit. His story is woven into every watch he touches, each stitch carrying the resilience and beauty of his community.</p>
+                    </div>
+                    
+                    <div class="story-actions">
+                        <a href="story-samuel.html" class="btn btn-primary">
+                            <i class="fas fa-book-open"></i>
+                            Read Full Story
+                        </a>
+                        <button class="btn btn-outline share-story">
+                            <i class="fas fa-share-alt"></i>
+                            Share
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Grid -->
+    <section class="stories-grid">
+        <div class="container">
+            <div class="section-header">
+                <h2>Discover Our Narratives</h2>
+                <p>Stories of culture, craftsmanship, and community</p>
+                
+                <div class="story-categories">
+                    <button class="category-btn active" data-category="all">All Stories</button>
+                    <button class="category-btn" data-category="artisans">Artisan Journeys</button>
+                    <button class="category-btn" data-category="culture">Cultural Heritage</button>
+                    <button class="category-btn" data-category="customers">Customer Stories</button>
+                    <button class="category-btn" data-category="behind-the-scenes">Behind the Scenes</button>
+                </div>
+            </div>
+            
+            <div class="stories-container">
+                <!-- Story 1 -->
+                <article class="story-card" data-category="artisans">
+                    <div class="story-image">
+                        <img src="images/stories/story-1.jpg" alt="Naomi's Beadwork" loading="lazy">
+                        <span class="story-category">Artisan Journeys</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>The Language of Beads: Naomi's Maasai Heritage</h3>
+                        <p class="story-excerpt">How traditional Maasai beadwork patterns encode stories of community, transition, and identity in every watch.</p>
+                        <div class="story-meta">
+                            <span class="author">Naomi Auma</span>
+                            <span class="date">Sep 28, 2023</span>
+                        </div>
+                        <a href="story-naomi.html" class="story-link">
+                            Read Story <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Story 2 -->
+                <article class="story-card" data-category="customers">
+                    <div class="story-image">
+                        <img src="images/stories/story-2.jpg" alt="Wedding Gift" loading="lazy">
+                        <span class="story-category">Customer Stories</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>A Watch for Three Generations: The Kimani Family Heirloom</h3>
+                        <p class="story-excerpt">How a SUED watch became a wedding gift, then a graduation present, and now awaits a new generation.</p>
+                        <div class="story-meta">
+                            <span class="author">David Kimani</span>
+                            <span class="date">Aug 12, 2023</span>
+                        </div>
+                        <a href="story-kimani.html" class="story-link">
+                            Read Story <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Story 3 -->
+                <article class="story-card" data-category="culture">
+                    <div class="story-image">
+                        <img src="images/stories/story-3.jpg" alt="Savanna Inspiration" loading="lazy">
+                        <span class="story-category">Cultural Heritage</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>Colors of the Savannah: Designing the 'Mau Sunrise' Collection</h3>
+                        <p class="story-excerpt">From the first light over the Maasai Mara to the watch dial—capturing Kenya's landscapes in time.</p>
+                        <div class="story-meta">
+                            <span class="author">Lena Wangari</span>
+                            <span class="date">Jul 5, 2023</span>
+                        </div>
+                        <a href="story-savannah.html" class="story-link">
+                            Read Story <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Story 4 -->
+                <article class="story-card" data-category="behind-the-scenes">
+                    <div class="story-image">
+                        <img src="images/stories/story-4.jpg" alt="Workshop Day" loading="lazy">
+                        <span class="story-category">Behind the Scenes</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>A Day in Our Nairobi Workshop: Sunrise to Sunset</h3>
+                        <p class="story-excerpt">Follow the rhythm of our workshop—from morning chai to the final quality check as dusk falls.</p>
+                        <div class="story-meta">
+                            <span class="author">Team SUED</span>
+                            <span class="date">Jun 18, 2023</span>
+                        </div>
+                        <a href="story-workshop-day.html" class="story-link">
+                            Read Story <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Story 5 -->
+                <article class="story-card" data-category="artisans">
+                    <div class="story-image">
+                        <img src="images/stories/story-5.jpg" alt="James Precision" loading="lazy">
+                        <span class="story-category">Artisan Journeys</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>The Precision of Patience: James's 17 Quality Checks</h3>
+                        <p class="story-excerpt">Meet James Kamau, whose meticulous eye ensures every watch meets our exacting standards.</p>
+                        <div class="story-meta">
+                            <span class="author">James Kamau</span>
+                            <span class="date">May 30, 2023</span>
+                        </div>
+                        <a href="story-james.html" class="story-link">
+                            Read Story <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Story 6 -->
+                <article class="story-card" data-category="customers">
+                    <div class="story-image">
+                        <img src="images/stories/story-6.jpg" alt="Global Journey" loading="lazy">
+                        <span class="story-category">Customer Stories</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>From Nairobi to Norway: A Watch's Unexpected Journey</h3>
+                        <p class="story-excerpt">How a SUED watch traveled 7,000km to become a diplomat's daily companion in Oslo.</p>
+                        <div class="story-meta">
+                            <span class="author">Ingrid Larsen</span>
+                            <span class="date">Apr 22, 2023</span>
+                        </div>
+                        <a href="story-norway.html" class="story-link">
+                            Read Story <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="load-more">
+                <button class="btn btn-outline" id="loadMoreStories">
+                    <i class="fas fa-plus"></i>
+                    Load More Stories
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Stories -->
+    <section class="video-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Stories in Motion</h2>
+                <p>Watch the narratives come to life</p>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="images/stories/video-1.jpg" alt="Artisan Documentary" loading="lazy">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Hands of Time: The Artisans of SUED</h3>
+                        <p class="video-desc">A 12-minute documentary following three artisans through their craft</p>
+                        <div class="video-meta">
+                            <span class="duration">12:24</span>
+                            <span class="views">15.2K views</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="images/stories/video-2.jpg" alt="Workshop Tour" loading="lazy">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>360° Workshop Tour with the Founders</h3>
+                        <p class="video-desc">An immersive look inside our Nairobi workshop</p>
+                        <div class="video-meta">
+                            <span class="duration">8:42</span>
+                            <span class="views">22.7K views</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="images/stories/video-3.jpg" alt="Customer Stories" loading="lazy">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Wearers' Stories: Global Connections</h3>
+                        <p class="video-desc">Customers from 12 countries share their SUED watch experiences</p>
+                        <div class="video-meta">
+                            <span class="duration">16:18</span>
+                            <span class="views">9.8K views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Submission -->
+    <section class="story-submission">
+        <div class="container">
+            <div class="submission-content">
+                <div class="submission-text">
+                    <h2>Share Your SUED Story</h2>
+                    <p>Every watch has a story. Share yours and become part of our growing narrative.</p>
+                    <ul class="submission-benefits">
+                        <li><i class="fas fa-check-circle"></i> Featured story opportunity</li>
+                        <li><i class="fas fa-check-circle"></i> Exclusive workshop invitation</li>
+                        <li><i class="fas fa-check-circle"></i> Limited edition gift</li>
+                    </ul>
+                </div>
+                
+                <div class="submission-form">
+                    <form id="storyForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us your SUED story..." rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="file-upload">
+                                <input type="file" accept="image/*">
+                                <span><i class="fas fa-camera"></i> Add a photo (optional)</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Share My Story
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="stories-newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Stay Updated with New Stories</h3>
+                <p>Subscribe to our newsletter and be the first to read new artisan journeys and customer stories.</p>
+                
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">
+                            Subscribe
+                        </button>
+                    </div>
+                    <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">⌚</span>
+                        <span class="logo-text">SUED<span class="logo-accent">WATCHES</span></span>
+                    </a>
+                    <p class="footer-tagline">Handcrafted in Nairobi, Worn Worldwide</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="shop.html">Shop All</a></li>
+                            <li><a href="new-arrivals.html">New Arrivals</a></li>
+                            <li><a href="best-sellers.html">Best Sellers</a></li>
+                            <li><a href="limited-editions.html">Limited Editions</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">Our Story</a></li>
+                            <li><a href="craftsmanship.html">Craftsmanship</a></li>
+                            <li><a href="stories.html">Our Stories</a></li>
+                            <li><a href="sustainability.html">Sustainability</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="shipping.html">Shipping & Returns</a></li>
+                            <li><a href="warranty.html">Warranty</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Visit</h4>
+                        <ul>
+                            <li>Nairobi Workshop</li>
+                            <li>Karen Road, Nairobi</li>
+                            <li>Mon-Fri: 9AM-6PM</li>
+                            <li>Sat: 10AM-4PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2024 SUED Watches. All rights reserved. Handcrafted in Nairobi, Kenya.</p>
+                    <div class="legal-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="cookies.html">Cookie Policy</a>
+                    </div>
+                </div>
+                
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/example" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/stories.js"></script>
+
+    <script>
+        // Stories page functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Category filtering
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const storyCards = document.querySelectorAll('.story-card');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.dataset.category;
+                    
+                    // Update active button
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter stories
+                    storyCards.forEach(card => {
+                        if (category === 'all' || card.dataset.category === category) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 10);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Load more stories
+            const loadMoreBtn = document.getElementById('loadMoreStories');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    // Simulate loading more stories
+                    this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+                    this.disabled = true;
+                    
+                    setTimeout(() => {
+                        // In a real implementation, this would fetch more stories from a server
+                        alert('More stories would load here. This is a demo.');
+                        this.innerHTML = '<i class="fas fa-plus"></i> Load More Stories';
+                        this.disabled = false;
+                    }, 1500);
+                });
+            }
+            
+            // Story sharing
+            const shareBtn = document.querySelector('.share-story');
+            if (shareBtn) {
+                shareBtn.addEventListener('click', function() {
+                    if (navigator.share) {
+                        navigator.share({
+                            title: 'SUED Watches Story',
+                            text: 'Read this inspiring story from SUED Watches',
+                            url: window.location.href
+                        });
+                    } else {
+                        // Fallback: copy to clipboard
+                        navigator.clipboard.writeText(window.location.href);
+                        const originalText = this.innerHTML;
+                        this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                        setTimeout(() => {
+                            this.innerHTML = originalText;
+                        }, 2000);
+                    }
+                });
+            }
+            
+            // Video modal
+            const videoThumbnails = document.querySelectorAll('.video-thumbnail, .play-overlay');
+            const videoModal = document.getElementById('videoModal');
+            const modalClose = document.getElementById('modalClose');
+            
+            videoThumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', () => {
+                    videoModal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            if (modalClose) {
+                modalClose.addEventListener('click', () => {
+                    videoModal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            }
+            
+            // Story submission form
+            const storyForm = document.getElementById('storyForm');
+            if (storyForm) {
+                storyForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                    submitBtn.disabled = true;
+                    
+                    // Simulate form submission
+                    setTimeout(() => {
+                        alert('Thank you for sharing your story! We\'ll be in touch if we feature it.');
+                        storyForm.reset();
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }, 2000);
+                });
+            }
+            
+            // Newsletter form
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                    submitBtn.disabled = true;
+                    
+                    setTimeout(() => {
+                        alert(`Thank you for subscribing with ${email}! You'll receive our next story update.`);
+                        this.reset();
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }, 1500);
+                });
+            }
+            
+            // Animate story cards on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animated');
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('.story-card').forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>

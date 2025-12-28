@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUED Watches Nairobi | Handcrafted Luxury Watches</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">⌚</span>
+                    <span class="logo-text">SUED<span class="logo-accent">WATCHES</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="icon-btn search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="cart.html" class="icon-btn cart-btn">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <button class="icon-btn user-btn">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+                
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <button class="close-search"><i class="fas fa-times"></i></button>
+            <input type="text" placeholder="Search watches, collections..." class="search-input">
+            <button class="search-submit"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Handcrafted Nairobi Watches</h1>
+            <p class="hero-subtitle">Premium leather & beaded timepieces crafted with Kenyan heritage</p>
+            <a href="shop.html" class="btn btn-primary">Shop Collection</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-watch.jpg" alt="SUED Watch">
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="section collections">
+        <div class="container">
+            <h2 class="section-title">Our Collections</h2>
+            <p class="section-subtitle">Each watch tells a story of Nairobi's vibrant culture</p>
+            
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="images/leather-collection.jpg" alt="Leather Collection">
+                    </div>
+                    <div class="collection-info">
+                        <h3>Leather Collection</h3>
+                        <p>Premium leather straps with timeless designs</p>
+                        <a href="shop.html?category=leather" class="btn-link">Explore →</a>
+                    </div>
+                </div>
+                
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="images/beaded-collection.jpg" alt="Beaded Collection">
+                    </div>
+                    <div class="collection-info">
+                        <h3>Beaded Collection</h3>
+                        <p>Traditional Maasai beadwork meets modern watchmaking</p>
+                        <a href="shop.html?category=beaded" class="btn-link">Explore →</a>
+                    </div>
+                </div>
+                
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="images/limited-collection.jpg" alt="Limited Edition">
+                    </div>
+                    <div class="collection-info">
+                        <h3>Limited Editions</h3>
+                        <p>Exclusive designs with Nairobi-inspired elements</p>
+                        <a href="shop.html?collection=limited" class="btn-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="section new-arrivals">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">New Arrivals</h2>
+                <a href="shop.html?sort=newest" class="view-all">View All →</a>
+            </div>
+            
+            <div class="products-grid" id="newArrivals">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Craftsmanship Section -->
+    <section class="section craftsmanship">
+        <div class="container">
+            <div class="craftsmanship-content">
+                <div class="craftsmanship-text">
+                    <h2>Nairobi Craftsmanship</h2>
+                    <p>Every SUED watch is meticulously handcrafted in our Nairobi workshop, blending traditional techniques with contemporary design.</p>
+                    
+                    <ul class="craftsmanship-list">
+                        <li><i class="fas fa-check-circle"></i> Premium locally-sourced materials</li>
+                        <li><i class="fas fa-check-circle"></i> Hand-stitched leather straps</li>
+                        <li><i class="fas fa-check-circle"></i> Traditional beadwork by local artisans</li>
+                        <li><i class="fas fa-check-circle"></i> Quality Swiss movements</li>
+                    </ul>
+                    
+                    <a href="about.html" class="btn btn-secondary">Our Story</a>
+                </div>
+                
+                <div class="craftsmanship-image">
+                    <img src="images/craftsmanship.jpg" alt="Watch Crafting">
+                    <div class="craftsmanship-badge">
+                        <span class="badge-number">5+</span>
+                        <span class="badge-text">Years of Excellence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="section instagram">
+        <div class="container">
+            <h2 class="section-title">Follow Our Journey</h2>
+            <p class="section-subtitle">@suedwatches on Instagram</p>
+            
+            <div class="instagram-grid">
+                <!-- Instagram posts will be loaded via JS -->
+                <div class="instagram-placeholder">
+                    <i class="fab fa-instagram"></i>
+                    <p>Loading our latest posts...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Stay Updated</h3>
+                <p>Subscribe for exclusive offers and new collection alerts</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                
+                <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-icon">⌚</span>
+                        <span class="logo-text">SUED<span class="logo-accent">WATCHES</span></span>
+                    </div>
+                    <p class="footer-about">Handcrafted luxury watches from Nairobi, Kenya. Celebrating African craftsmanship with every timepiece.</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html?category=leather">Leather Watches</a></li>
+                        <li><a href="shop.html?category=beaded">Beaded Watches</a></li>
+                        <li><a href="shop.html?collection=limited">Limited Editions</a></li>
+                        <li><a href="shop.html?collection=bestsellers">Best Sellers</a></li>
+                        <li><a href="shop.html">All Collections</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="about.html#craftsmanship">Craftsmanship</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Workshop 24, Nairobi Design Centre, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 712 345 678</li>
+                        <li><i class="fas fa-envelope"></i> hello@suedwatches.co.ke</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SUED Watches Nairobi. All rights reserved.</p>
+                <div class="payment-methods">
+                    <span>We accept:</span>
+                    <i class="fab fa-cc-mpesa" title="MPESA"></i>
+                    <i class="fab fa-cc-visa" title="Visa"></i>
+                    <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fab fa-cc-paypal" title="PayPal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <h3>Welcome Back</h3>
+            <form class="auth-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p class="auth-switch">New customer? <a href="#" class="switch-to-register">Create account</a></p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
+</body>
+</html>

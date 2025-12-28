@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en" class="contact-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SUED Watches - Nairobi Craftsmanship</title>
+    <meta name="description" content="Get in touch with SUED Watches. Visit our Nairobi workshop, book a tour, or contact our customer service team.">
+    <meta name="keywords" content="contact SUED Watches, Nairobi workshop visit, watch repair service, customer support Kenya, book workshop tour">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Us | SUED Watches">
+    <meta property="og:description" content="Connect with Nairobi's premier watchmakers. Visit, call, or message us.">
+    <meta property="og:image" content="https://suedwatches.co.ke/images/contact-og.jpg">
+    
+    <!-- Preload Assets -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/contact.css" as="style">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Leaflet CSS for Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">⌚</span>
+                    <span class="logo-text">SUED<span class="logo-accent">WATCHES</span></span>
+                </a>
+                <span class="nav-tagline">Connect With Us</span>
+            </div>
+
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="craftsmanship.html">Craftsmanship</a></li>
+                    <li><a href="stories.html">Our Stories</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="shop.html" class="btn btn-outline btn-sm">
+                        <i class="fas fa-shopping-bag"></i>
+                        Shop Collection
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Connect With</span>
+                        <span class="title-line highlight">Nairobi's Artisans</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Whether you're visiting our workshop, seeking support, or just want to talk watches, we're here for you.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span class="stat-label">Response Time</span>
+                            <span class="stat-number">2-4 Hours</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-headset"></i>
+                            <span class="stat-label">Support Available</span>
+                            <span class="stat-number">7 Days a Week</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-smile"></i>
+                            <span class="stat-label">Satisfaction Rate</span>
+                            <span class="stat-number">98.7%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="images/contact/hero-image.jpg" alt="SUED Workshop Nairobi" loading="lazy">
+                    <div class="image-badge">
+                        <span>📍 Karen, Nairobi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="section-header">
+                <h2>How Can We Help You?</h2>
+                <p>Choose the most convenient way to reach us</p>
+            </div>
+            
+            <div class="methods-grid">
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="method-content">
+                        <h3>Visit Our Workshop</h3>
+                        <p>Experience craftsmanship firsthand at our Nairobi workshop</p>
+                        <div class="method-details">
+                            <p><strong>Address:</strong> Karen Road, Nairobi, Kenya</p>
+                            <p><strong>Hours:</strong> Mon-Fri 9AM-6PM, Sat 10AM-4PM</p>
+                        </div>
+                        <a href="#map-section" class="btn btn-outline btn-sm">
+                            <i class="fas fa-directions"></i>
+                            Get Directions
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="method-content">
+                        <h3>Call Us</h3>
+                        <p>Speak directly with our customer service team</p>
+                        <div class="method-details">
+                            <p><strong>Kenya:</strong> +254 700 123 456</p>
+                            <p><strong>International:</strong> +254 20 456 7890</p>
+                            <p><strong>WhatsApp:</strong> +254 712 345 678</p>
+                        </div>
+                        <a href="tel:+254700123456" class="btn btn-outline btn-sm">
+                            <i class="fas fa-phone"></i>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="method-content">
+                        <h3>Email Us</h3>
+                        <p>Send us a message and we'll respond within hours</p>
+                        <div class="method-details">
+                            <p><strong>General:</strong> hello@suedwatches.co.ke</p>
+                            <p><strong>Support:</strong> support@suedwatches.co.ke</p>
+                            <p><strong>Wholesale:</strong> wholesale@suedwatches.co.ke</p>
+                        </div>
+                        <a href="#contact-form" class="btn btn-outline btn-sm">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="method-content">
+                        <h3>Book a Tour</h3>
+                        <p>Schedule a guided workshop tour with our artisans</p>
+                        <div class="method-details">
+                            <p><strong>Duration:</strong> 2 hours</p>
+                            <p><strong>Group Size:</strong> Max 8 people</p>
+                            <p><strong>Includes:</strong> Hands-on experience</p>
+                        </div>
+                        <a href="book-tour.html" class="btn btn-outline btn-sm">
+                            <i class="fas fa-ticket-alt"></i>
+                            Book Tour
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-section" id="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Select a topic</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="order">Order Status</option>
+                                <option value="repair">Watch Repair</option>
+                                <option value="custom">Custom Order</option>
+                                <option value="wholesale">Wholesale Inquiry</option>
+                                <option value="tour">Workshop Tour</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our newsletter for updates and stories</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <div class="info-card">
+                        <h3>Visit Our Workshop</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Karen Road, Nairobi, Kenya</p>
+                                <p class="info-note">Located in the Karen Blixen area</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+                                <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+                                <p><strong>Sunday:</strong> Closed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Contact Numbers</h4>
+                                <p><strong>Customer Service:</strong> +254 700 123 456</p>
+                                <p><strong>Workshop:</strong> +254 20 456 7890</p>
+                                <p><strong>Emergency Repairs:</strong> +254 712 345 678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Addresses</h4>
+                                <p><strong>General:</strong> hello@suedwatches.co.ke</p>
+                                <p><strong>Support:</strong> support@suedwatches.co.ke</p>
+                                <p><strong>Press:</strong> press@suedwatches.co.ke</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tour-banner">
+                            <h4>Workshop Tours Available</h4>
+                            <p>Experience craftsmanship firsthand with a guided tour of our workshop.</p>
+                            <a href="book-tour.html" class="btn btn-secondary btn-sm">
+                                <i class="fas fa-calendar-alt"></i>
+                                Book a Tour
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="social-card">
+                        <h3>Connect on Social Media</h3>
+                        <p>Follow our journey and see our latest creations.</p>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>@suedwatches</span>
+                            </a>
+                            <a href="#" class="social-link facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>SUED Watches</span>
+                            </a>
+                            <a href="#" class="social-link twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>@suedwatches</span>
+                            </a>
+                            <a href="#" class="social-link youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>SUED Craftsmanship</span>
+                            </a>
+                            <a href="#" class="social-link pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                                <span>SUED Watches</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Our Nairobi Workshop</h2>
+                <p>Visit us in the heart of Karen, Nairobi</p>
+            </div>
+            
+            <div class="map-wrapper">
+                <div id="map" style="height: 500px; width: 100%;"></div>
+                
+                <div class="map-overlay">
+                    <div class="overlay-content">
+                        <h3>Getting Here</h3>
+                        <div class="transport-options">
+                            <div class="option">
+                                <i class="fas fa-car"></i>
+                                <div>
+                                    <h4>By Car</h4>
+                                    <p>Ample parking available on-site</p>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <i class="fas fa-bus"></i>
+                                <div>
+                                    <h4>Public Transport</h4>
+                                    <p>Matatu route 111 to Karen Shopping Centre</p>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <i class="fas fa-taxi"></i>
+                                <div>
+                                    <h4>Taxi/Ride Share</h4>
+                                    <p>Use "SUED Watches Workshop" as destination</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="map-actions">
+                            <a href="https://maps.google.com/?q=Karen+Road+Nairobi+Kenya" target="_blank" class="btn btn-outline">
+                                <i class="fas fa-external-link-alt"></i>
+                                Open in Google Maps
+                            </a>
+                            <button class="btn btn-secondary" id="getDirections">
+                                <i class="fas fa-directions"></i>
+                                Get Directions
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does watch repair take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Standard repairs typically take 5-7 business days. Complex repairs or custom work may take up to 14 days. We offer expedited service for urgent repairs at an additional cost.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you ship internationally?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we ship worldwide. Shipping times vary by location: 3-5 days within East Africa, 7-10 days to Europe and North America, and 10-14 days to other regions. All shipments include tracking and insurance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I customize a watch?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We specialize in custom orders. You can choose leather types, bead colors, engravings, and even collaborate with our designers on completely unique designs. Contact our custom orders team for more information.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What's your warranty policy?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All SUED watches come with a 5-year craftsmanship warranty covering manufacturing defects. The warranty does not cover damage from accidents, misuse, or normal wear and tear. View our full warranty terms <a href="warranty.html">here</a>.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer wholesale pricing?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we work with retailers worldwide. Our wholesale program offers volume discounts, custom packaging options, and exclusive designs. Contact our wholesale team at wholesale@suedwatches.co.ke for more information.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I care for my leather watch strap?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Keep leather straps dry, avoid direct sunlight for extended periods, and clean with a soft, dry cloth. For deeper cleaning, use a leather conditioner specifically for watch straps. Never submerge leather straps in water.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Didn't find your answer?</p>
+                <a href="faq.html" class="btn btn-outline">
+                    <i class="fas fa-question-circle"></i>
+                    View Full FAQ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact">
+        <div class="container">
+            <div class="emergency-card">
+                <div class="emergency-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <div class="emergency-content">
+                    <h3>Urgent Watch Repair?</h3>
+                    <p>For emergency repairs or immediate assistance, call our dedicated repair line.</p>
+                    <div class="emergency-contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <span class="label">Emergency Repair Line</span>
+                                <a href="tel:+254712345678" class="number">+254 712 345 678</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <span class="label">Available</span>
+                                <span class="hours">7 Days a Week, 8AM-8PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="emergency-note">*Emergency service available for existing SUED watch owners only</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">⌚</span>
+                        <span class="logo-text">SUED<span class="logo-accent">WATCHES</span></span>
+                    </a>
+                    <p class="footer-tagline">Handcrafted in Nairobi, Worn Worldwide</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="shop.html">Shop All</a></li>
+                            <li><a href="new-arrivals.html">New Arrivals</a></li>
+                            <li><a href="best-sellers.html">Best Sellers</a></li>
+                            <li><a href="limited-editions.html">Limited Editions</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">Our Story</a></li>
+                            <li><a href="craftsmanship.html">Craftsmanship</a></li>
+                            <li><a href="stories.html">Our Stories</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="shipping.html">Shipping & Returns</a></li>
+                            <li><a href="warranty.html">Warranty</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Visit</h4>
+                        <ul>
+                            <li>Nairobi Workshop</li>
+                            <li>Karen Road, Nairobi</li>
+                            <li>Mon-Fri: 9AM-6PM</li>
+                            <li>Sat: 10AM-4PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2024 SUED Watches. All rights reserved. Handcrafted in Nairobi, Kenya.</p>
+                    <div class="legal-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="cookies.html">Cookie Policy</a>
+                    </div>
+                </div>
+                
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for contacting SUED Watches. We'll get back to you within 2-4 hours.</p>
+            <button class="btn btn-primary" id="closeModal">Continue Browsing</button>
+        </div>
+    </div>
+
+    <!-- Leaflet JS for Map -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+
+    <script>
+        // Contact page functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize map
+            function initMap() {
+                // Coordinates for Nairobi, Karen area
+                const nairobiCoords = [-1.3192, 36.8135];
+                
+                // Create map
+                const map = L.map('map').setView(nairobiCoords, 14);
+                
+                // Add tile layer
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap contributors'
+                }).addTo(map);
+                
+                // Add custom marker
+                const customIcon = L.divIcon({
+                    html: '<div class="custom-marker"><i class="fas fa-map-marker-alt"></i></div>',
+                    iconSize: [40, 40],
+                    iconAnchor: [20, 40],
+                    className: 'custom-marker-container'
+                });
+                
+                // Add marker for SUED workshop
+                const marker = L.marker(nairobiCoords, { icon: customIcon }).addTo(map);
+                
+                // Add popup to marker
+                marker.bindPopup(`
+                    <div class="map-popup">
+                        <h4>SUED Watches Workshop</h4>
+                        <p>Karen Road, Nairobi</p>
+                        <p><strong>Hours:</strong> Mon-Fri 9AM-6PM</p>
+                        <a href="https://maps.google.com/?q=Karen+Road+Nairobi+Kenya" target="_blank">Get Directions</a>
+                    </div>
+                `).openPopup();
+                
+                // Fit bounds to show surrounding area
+                map.fitBounds([
+                    [-1.33, 36.79],
+                    [-1.30, 36.84]
+                ]);
+            }
+            
+            // Initialize map when page loads
+            initMap();
+            
+            // Get directions button
+            const getDirectionsBtn = document.getElementById('getDirections');
+            if (getDirectionsBtn) {
+                getDirectionsBtn.addEventListener('click', function() {
+                    const destination = "Karen+Road+Nairobi+Kenya";
+                    const url = `https://www.google.com/maps/dir/?api=1&destination=${destination}`;
+                    window.open(url, '_blank');
+                });
+            }
+            
+            // Contact form submission
+            const contactForm = document.getElementById('contactForm');
+            const successModal = document.getElementById('successModal');
+            const closeModalBtn = document.getElementById('closeModal');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(this);
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    // Show loading state
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                    submitBtn.disabled = true;
+                    
+                    // Simulate API call (replace with actual API endpoint)
+                    setTimeout(() => {
+                        // Show success modal
+                        successModal.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                        
+                        // Reset form
+                        contactForm.reset();
+                        
+                        // Reset button
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }, 2000);
+                });
+            }
+            
+            // Close modal
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', function() {
+                    successModal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            }
+            
+            // Close modal when clicking outside
+            successModal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            // FAQ accordion functionality
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle current FAQ
+                    const isOpen = answer.style.maxHeight;
+                    
+                    // Close all FAQs first
+                    document.querySelectorAll('.faq-answer').forEach(ans => {
+                        ans.style.maxHeight = null;
+                        ans.previousElementSibling.querySelector('i').className = 'fas fa-chevron-down';
+                    });
+                    
+                    // Open clicked FAQ if it was closed
+                    if (!isOpen) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.className = 'fas fa-chevron-up';
+                    }
+                });
+            });
+            
+            // Open first FAQ by default
+            if (faqQuestions.length > 0) {
+                faqQuestions[0].click();
+            }
+            
+            // Phone number formatting
+            const phoneInput = document.getElementById('phone');
+            if (phoneInput) {
+                phoneInput.addEventListener('input', function(e) {
+                    let value = e.target.value.replace(/\D/g, '');
+                    
+                    // Format as +254 XXX XXX XXX
+                    if (value.length > 0) {
+                        if (value.length <= 3) {
+                            value = `+${value}`;
+                        } else if (value.length <= 6) {
+                            value = `+${value.slice(0,3)} ${value.slice(3)}`;
+                        } else if (value.length <= 9) {
+                            value = `+${value.slice(0,3)} ${value.slice(3,6)} ${value.slice(6)}`;
+                        } else {
+                            value = `+${value.slice(0,3)} ${value.slice(3,6)} ${value.slice(6,9)} ${value.slice(9,12)}`;
+                        }
+                    }
+                    
+                    e.target.value = value;
+                });
+            }
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    
+                    if (href !== '#') {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        
+                        if (target) {
+                            window.scrollTo({
+                                top: target.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+            
+            // Add animation to contact cards on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animated');
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('.method-card, .info-card, .social-card').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
